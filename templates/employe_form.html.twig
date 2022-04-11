@@ -4,33 +4,92 @@
 
 {{form_start(employeForm)}}
 
-{{form_label(employeForm.Prenom, 'Prenom :', {'label_attr' : {'class' : 'label'}})}}
-{{form_widget(employeForm.Prenom, {'attr' : {'class' : 'input', 'placeholder' : 'Prenom'}})}}
+<div class="form-group mt-2" style="margin-left: 10px">
+    <div>
+        <div>
+        {{form_label(employeForm.Prenom, 'Prenom :', {'label_attr' : {'class' : 'label'}})}}
+        </div>
+        <div>
+        {{form_widget(employeForm.Prenom, {'attr' : {'class' : 'input', 'placeholder' : 'Prenom'}})}}
+        </div>
+    </div>
 
-{{form_label(employeForm.Nom, 'Nom :', {'label_attr' : {'class' : 'label'}})}}
-{{form_widget(employeForm.Nom, {'attr' : {'class' : 'input', 'placeholder' : 'Nom'}})}}
+    <div class="form-group col-md-6">
+        <div>
+        {{form_label(employeForm.Nom, 'Nom :', {'label_attr' : {'class' : 'label'}})}}
+        </div>
+        <div>
+        {{form_widget(employeForm.Nom, {'attr' : {'class' : 'input', 'placeholder' : 'Nom'}})}}
+        </div>
+    </div>
 
-{{form_label(employeForm.Telephone, 'Telephone :', {'label_attr' : {'class' : 'label'}})}}
-{{form_widget(employeForm.Telephone, {'attr' : {'class' : 'input', 'placeholder' : 'Telephone'}})}}
+    <div>
+        <div>
+        {{form_label(employeForm.Telephone, 'Telephone :', {'label_attr' : {'class' : 'label'}})}}
+        </div>
+        <div>
+        {{form_widget(employeForm.Telephone, {'attr' : {'class' : 'input', 'placeholder' : 'Telephone'}})}}
+        </div>
+    </div>
 
-{{form_label(employeForm.Email, 'Email :', {'label_attr' : {'class' : 'label'}})}}
-{{form_widget(employeForm.Email, {'attr' : {'class' : 'input', 'placeholder' : 'Email'}})}}
+    <div>
+        <div>
+        {{form_label(employeForm.Email, 'Email :', {'label_attr' : {'class' : 'label'}})}}
+        </div>
+        <div>
+        {{form_widget(employeForm.Email, {'attr' : {'class' : 'input', 'placeholder' : 'Email'}})}}
+        </div>
+    </div>
 
-{{form_label(employeForm.Adresse, 'Adresse :', {'label_attr' : {'class' : 'label'}})}}
-{{form_widget(employeForm.Adresse, {'attr' : {'class' : 'input', 'placeholder' : 'Adresse'}})}}
+    <div>
+        <div>
+        {{form_label(employeForm.Adresse, 'Adresse :', {'label_attr' : {'class' : 'label'}})}}
+        </div>
+        <div>
+        {{form_widget(employeForm.Adresse, {'attr' : {'class' : 'input', 'placeholder' : 'Adresse'}})}}
+        </div>
+    </div>
 
-{{form_label(employeForm.Poste, 'Poste :', {'label_attr' : {'class' : 'label'}})}}
-{{form_widget(employeForm.Poste, {'attr' : {'class' : 'input', 'placeholder' : 'Poste'}})}}
+    <div>
+        <div>
+        {{form_label(employeForm.Poste, 'Poste :', {'label_attr' : {'class' : 'label'}})}}
+        </div>
+        <div>
+        {{form_widget(employeForm.Poste, {'attr' : {'class' : 'input', 'placeholder' : 'Poste'}})}}
+        </div>
+    </div>
 
-{{form_label(employeForm.Salaire, 'Salaire :', {'label_attr' : {'class' : 'label'}})}}
-{{form_widget(employeForm.Salaire, {'attr' : {'class' : 'input', 'placeholder' : 'Salaire'}})}}
+    <div>
+        <div>
+        {{form_label(employeForm.Salaire, 'Salaire :', {'label_attr' : {'class' : 'label'}})}}
+        </div>
+        <div>
+        {{form_widget(employeForm.Salaire, {'attr' : {'class' : 'input', 'placeholder' : 'Salaire'}})}}
+        </div>
+    </div>
 
-{{form_label(employeForm.DateDeNaissance, 'Date de naissance :', {'label_attr' : {'class' : 'label'}})}}
-{{form_widget(employeForm.DateDeNaissance, {'attr' : {'class' : 'input', 'placeholder' : 'Date de naissance'}})}}
-
-{{form_widget(employeForm.Enregistrer, {'attr' : {'class' : 'input'}})}}
+    <div>
+        <div>
+        {{form_label(employeForm.DateDeNaissance, 'Date de naissance :', {'label_attr' : {'class' : 'label'}})}}
+        </div>
+        <div>
+        {{form_widget(employeForm.DateDeNaissance, {'attr' : {'class' : 'input', 'placeholder' : 'Date de naissance'}})}}
+        </div>
+    </div>
+    <br>
+    <div class="re">
+    {{form_widget(employeForm.Enregistrer, {'attr' : {'class' : 'input'}})}}
+    </div>
+</div>
 
 
 {{form_end(employeForm)}}
+
+<style>
+.re{
+    
+}
+</style>
+
 {% endblock %}
 
