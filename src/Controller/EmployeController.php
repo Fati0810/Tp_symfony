@@ -68,7 +68,7 @@ class EmployeController extends AbstractController
             return $this->redirectToRoute('employe_list');
         }
 
-        return $this->render("employe_list.html.twig", ['employeForm' => $employeForm->createView()]);
+        return $this->render("employe_form.html.twig", ['employeForm' => $employeForm->createView()]);
     }
 
     # modifier
