@@ -24,7 +24,7 @@
     <tbody>
     {% for employe in employes %}
         <tr>
-        <th scope="row"><a href="{{ path('employe_show', {'id' : employe.id } ) }}">{{ employe.id }}</a></th>
+        <th scope="row"><a href="{{ path('employe_show', {'id' : employe.id } ) }}" style="color: black" >{{ employe.id }}</a></th>
         <td>{{employe.prenom}}</td>
         <td>{{employe.nom}}</td>
         <td>{{employe.telephone}}</td>
