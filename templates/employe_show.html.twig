@@ -1,0 +1,39 @@
+{% extends 'bases.html.twig' %}
+
+{% block body %}
+
+
+   
+<div class="container row g-3 align-items-center">
+    <table class="table">
+    <thead>
+        <tr>
+        <th scope="col">#</th>
+        <th scope="col">Prénom</th>
+        <th scope="col">Nom</th>
+        <th scope="col">Téléphone</th>
+        <th scope="col">Email</th>
+        <th scope="col">Adresse</th>
+        <th scope="col">Poste</th>
+        <th scope="col">Salaire</th>
+        <th scope="col">Date de naissance</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+        <th scope="row">{{employe.id}}</th>
+        <td>{{employe.prenom}}</td>
+        <td>{{employe.nom}}</td>
+        <td>{{employe.telephone}}</td>
+        <td>{{employe.email}}</td>
+        <td>{{employe.adresse}}</td>
+        <td>{{employe.poste}}</td>
+        <td>{{employe.salaire}}</td>
+        <td>{{employe.datedenaissance|date("d/m/Y")}}</td>
+        </tr>
+ 
+    </tbody>
+    </table>
+</div>
+
+{% endblock %}
