@@ -23,9 +23,9 @@ class EmployeController extends AbstractController
         ]);
     }
 
-    # afficher la liste des employes
+    # afficher la liste des employes avec /
     /**
-     * @Route("employes", name="employe_list")
+     * @Route("/", name="employe_list")
      */
     public function employeList(EmployeRepository $employeRepository)
     {
@@ -37,7 +37,7 @@ class EmployeController extends AbstractController
     # afficher un employe avec son id
 
     /**
-     * @Route("employes/employe/{id}", name="employe_show")
+     * @Route("/employe/{id}", name="employe_show")
      */
     public function employeShow(EmployeRepository $employeRepository, $id)
     {
@@ -49,7 +49,7 @@ class EmployeController extends AbstractController
     # créer/ajouter
 
      /**
-     * @Route("employes/create", name="employe_create")
+     * @Route("/create", name="employe_create")
      */
     public function employeCreate(
         EntityManagerInterface $entityManagerInterface,
@@ -73,7 +73,7 @@ class EmployeController extends AbstractController
 
     # modifier
     /**
-     * @Route("/employes/{id}/update", name="employe_update")
+     * @Route("/{id}/update", name="employe_update")
      */
     public function employeUpdate(
         $id,
