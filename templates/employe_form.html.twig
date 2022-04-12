@@ -77,19 +77,33 @@
         </div>
     </div>
     <br>
-    <div class="re">
-    {{form_widget(employeForm.Enregistrer, {'attr' : {'class' : 'input'}})}}
+    <div>
+    {{form_widget(employeForm.Enregistrer, {'attr' : {'class' : 'btn'}})}}
     </div>
 </div>
 
 
 {{form_end(employeForm)}}
 
-<style>
-.re{
-    
-}
-</style>
+	<style>
+		.btn {
+		border: none;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+        text-transform: uppercase;
+        outline: none;
+        overflow: hidden;
+        position: relative;
+        color: #eeeeee;
+        font-weight: 600;
+        font-size: 15px;
+        background-color: grey;
+        padding: 15px 30px;
+        /* margin: 0 auto; */
+		}
+		
+	</style>
 
 {% endblock %}
 
