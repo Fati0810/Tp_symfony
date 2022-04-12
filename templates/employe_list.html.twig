@@ -34,9 +34,6 @@
         <td>{{employe.salaire}}</td>
         <td>{{employe.datedenaissance|date("d/m/Y")}}</td>
         <td>
-         <a href="{{ path('employe_create')}}" style="color: black">
-        <i class="fa-solid fa-square-plus"></i>
-        </a>
         <a href="{{ path('employe_update',{'id' : employe.id})}}" style="color: black">
         <i class="fa-solid fa-pen-to-square"></i>
         </a>
@@ -48,6 +45,9 @@
     {% endfor %}
     </tbody>
     </table>
+    <div class="container">
+        <a href="{{ path('employe_create')}}" class="btn btn-secondary"> Créer un compte </a>
+    </div>
 </div>
 {# <div >
     <a href="{{ path('employe_create')}}" class="btn btn-outline-secondary" style="margin-left: 10px;"> Créer un compte</a>
